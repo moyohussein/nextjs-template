@@ -1,0 +1,157 @@
+@import 'tailwindcss';
+
+@plugin 'tailwindcss-animate';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+/*
+  ---break---
+*/
+:root {
+  --radius: 0.6rem;
+  --color-primary-dark: #000000;
+  --color-primary-green: #28a745;
+  --color-primary-white: #ffffff;
+  --color-secondary-grey: #808080;
+  --color-secondary-neutral: #d3d3d3;
+  --color-dark-900: #1a202c;
+  --color-foundation-green-light: #e8f5e9;
+  --color-foundation-green-light-hover: #dcedc8;
+  --color-foundation-green-light-active: #c8e6c9;
+  --color-foundation-green-normal: #28a745;
+  --color-foundation-green-normal-hover: #218838;
+  --color-foundation-green-normal-active: #1e7e34;
+  --color-foundation-green-dark: #155724;
+  --color-foundation-green-dark-hover: #11461e;
+  --color-foundation-green-dark-active: #0f3c1a;
+  --color-foundation-green-darker: #0a2e13;
+}
+/*
+  ---break---
+*/
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+.bg-primary-dark {
+  background-color: var(--color-primary-dark);
+}
+.bg-primary-green {
+  background-color: var(--color-primary-green);
+}
+.bg-primary-white {
+  background-color: var(--color-primary-white);
+}
+.bg-secondary-grey {
+  background-color: var(--color-secondary-grey);
+}
+.bg-secondary-neutral {
+  background-color: var(--color-secondary-neutral);
+}
+.bg-dark-900 {
+  background-color: var(--color-dark-900);
+}
+.bg-foundation-green-light {
+  background-color: var(--color-foundation-green-light);
+}
+.bg-foundation-green-light:hover {
+  background-color: var(--color-foundation-green-light-hover);
+}
+.bg-foundation-green-light:active {
+  background-color: var(--color-foundation-green-light-active);
+}
+.bg-foundation-green-normal {
+  background-color: var(--color-foundation-green-normal);
+}
+.bg-foundation-green-normal:hover {
+  background-color: var(--color-foundation-green-normal-hover);
+}
+.bg-foundation-green-normal:active {
+  background-color: var(--color-foundation-green-normal-active);
+}
+.bg-foundation-green-dark {
+  background-color: var(--color-foundation-green-dark);
+}
+.bg-foundation-green-dark:hover {
+  background-color: var(--color-foundation-green-dark-hover);
+}
+.bg-foundation-green-dark:active {
+  background-color: var(--color-foundation-green-dark-active);
+}
+.bg-foundation-green-darker {
+  background-color: var(--color-foundation-green-darker);
+}
+
+.text-primary-dark {
+  color: var(--color-primary-dark);
+}
+.text-primary-green {
+  color: var(--color-primary-green);
+}
+.text-primary-white {
+  color: var(--color-primary-white);
+}
+.text-secondary-grey {
+  color: var(--color-secondary-grey);
+}
+.text-secondary-neutral {
+  color: var(--color-secondary-neutral);
+}
+.text-dark-900 {
+  color: var(--color-dark-900);
+}
+.text-foundation-green-light {
+  color: var(--color-foundation-green-light);
+}
+.text-foundation-green-light-hover {
+  color: var(--color-foundation-green-light-hover);
+}
+.text-foundation-green-light-active {
+  color: var(--color-foundation-green-light-active);
+}
+.text-foundation-green-normal {
+  color: var(--color-foundation-green-normal);
+}
+.text-foundation-green-normal:hover {
+  color: var(--color-foundation-green-normal-hover);
+}
+.text-foundation-green-normal:active {
+  color: var(--color-foundation-green-normal-active);
+}
+.text-foundation-green-dark {
+  color: var(--color-foundation-green-dark);
+}
+.text-foundation-green-dark:hover {
+  color: var(--color-foundation-green-dark-hover);
+}
+.text-foundation-green-dark:active {
+  color: var(--color-foundation-green-dark-active);
+}
+.text-foundation-green-darker {
+  color: var(--color-foundation-green-darker);
+}
