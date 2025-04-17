@@ -1,80 +1,108 @@
-# **Siraat Frontend**
+# Next.js Template
 
-The frontend of **Siraat**, a social networking platform designed for Muslims, built using **Next.js (TypeScript), Redux Toolkit, Tailwind CSS**, and integrated with the **Siraat Backend (Spring Boot + NestJS).**
+Welcome to the **Next.js Template**! This repository serves as a starter template for building applications using [Next.js](https://nextjs.org/).
 
-## **📌 Tech Stack**
+## Features
 
-| **Technology**                   | **Purpose**                                |
-| -------------------------------- | ------------------------------------------ |
-| **Next.js (TypeScript)**         | Full-stack React framework for SEO & SSR   |
-| **Redux Toolkit**                | State management for user data & API calls |
-| **Tailwind CSS**                 | Utility-first CSS framework for styling    |
-| **NextAuth.js**                  | Authentication with JWT & OAuth            |
-| **Axios**                        | API requests to backend services           |
-| **WebSockets**                   | Real-time messaging & notifications        |
-| **React Query**                  | API data fetching and caching              |
-| **Server Actions (Next.js 14+)** | Backend logic inside Next.js               |
+- **TypeScript**: Type-safe development experience.
+- **CSS Styling**: Pre-configured for styling with CSS.
+- **Next.js**: Fast server-side rendering and static site generation.
+- **JavaScript**: Support for JavaScript development as needed.
 
-## **🚀 Getting Started**
+## Getting Started
 
-### **1️⃣ Prerequisites**
+Follow these steps to set up and run the project locally:
 
-Make sure you have the following installed:
+### Prerequisites
 
-- **Node.js 18+**
-- **Yarn or npm**
-- **Backend API running** (`siraat-backend`)
+Make sure you have the following installed on your system:
 
----
+- [Node.js](https://nodejs.org/) (version 16 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-### **2️⃣ Clone the Repository**
+### Installation
 
-```bash
-git clone https://github.com/your-org/siraat-frontend.git
-cd siraat-frontend
-```
+1. Clone this repository:
 
----
+   ```bash
+   git clone https://github.com/moyohussein/nextjs-template.git
+   ```
 
-### **3️⃣ Environment Configuration**
+2. Navigate to the project directory:
 
-Create an `.env.local` file in the root directory:
+   ```bash
+   cd nextjs-template
+   ```
 
-```env
-NEXT_PUBLIC_API_BASE_URL=http://localhost:3000/api
-NEXT_PUBLIC_WEBSOCKET_URL=ws://localhost:3000
-NEXTAUTH_SECRET=yourauthsecret
-NEXTAUTH_URL=http://localhost:3000
-```
+3. Install dependencies:
 
----
+   Using npm:
+   ```bash
+   npm install
+   ```
 
-### **4️⃣ Install Dependencies**
+   Or using yarn:
+   ```bash
+   yarn install
+   ```
 
-```bash
-yarn install
-# or
-npm install
-```
+### Running the Development Server
 
----
-
-### **5️⃣ Run the Frontend**
+Start the development server:
 
 ```bash
-yarn dev
-# or
 npm run dev
 ```
 
-This will start the frontend on `http://localhost:3000`
+Or using yarn:
 
----
+```bash
+yarn dev
+```
 
-## **📌 Summary**
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-✅ **Next.js (TypeScript) with Redux Toolkit**  
-✅ **Server-Side Rendering (SSR) for SEO**  
-✅ **API calls using Axios**  
-✅ **JWT Authentication & WebSockets**  
-✅ **Docker + Vercel for fast deployment**
+## Project Structure
+
+Here is a brief overview of the folder structure:
+
+```
+nextjs-template/
+├── public/           # Static files
+├── src/              # Source code
+│   ├── components/   # Reusable components
+│   ├── pages/        # Next.js pages
+│   ├── styles/       # CSS styles
+│   └── utils/        # Utility functions
+├── .gitignore        # Git ignore rules
+├── package.json      # Project dependencies and scripts
+├── README.md         # Project documentation (this file)
+└── tsconfig.json     # TypeScript configuration
+```
+
+## Scripts
+
+Here are the available scripts in the `package.json`:
+
+- **`dev`**: Starts the development server.
+- **`build`**: Builds the application for production.
+- **`start`**: Starts the production server.
+- **`lint`**: Runs linting on the code.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and push the branch.
+4. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
